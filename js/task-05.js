@@ -1,10 +1,6 @@
-document.getElementById('name-input').addEventListener('input', function() {
-    const inputValue = this.value;
-    const nameOutput = document.getElementById('name-output');
 
-    if (inputValue.trim() !== '') {
-        nameOutput.textContent = inputValue;
-    } else {
-        nameOutput.textContent = 'Anonymous';
-    }
-});
+const output = document.querySelector(`#name-output`);
+const input = document.querySelector(`#name-input`);
+
+input.addEventListener("input", (event) => 
+textOutput.textContent = event.target.value||`Anonymous`);
